@@ -5,29 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./estilo/estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main id="conteiner">
+    <div id="content">
+      <header id="cabecalho">
+        <img src="./images/image-equilibrium.jpg" alt="Equilibrium">
+        <div id="cover">
+          <img src="./images/icon-view.svg" alt="">
+        </div>
+      </header>
+      <section id="conteudo">
+        <h1>Equilibrium #3429</h1>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div id="eth-day">
+          <img src="./images/icon-ethereum.svg" alt="Ethereum">
+          <p id="text-eth">0.041 ETH</p>
+          <img src="./images/icon-clock.svg" alt="Clock" id="image"">
+          <p>3 days left</p>
+        </div>
+      </section>
+      <footer><img src="./images/image-avatar.png" alt=""> <p>Creation of <span>Jules Wyvern</span></p></footer>
+    </div>
+  </main>
 </body>
 </html>
